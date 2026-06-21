@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Roof — Монтаж и ремонт кровли любой сложности</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #ffcc00;
+        }
+
+        header p {
+            margin: 5px 0 0 0;
+            font-size: 1.1rem;
+            opacity: 0.8;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('roof.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h2 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 600px;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+        }
+
+        .services {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .service-card {
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-top: 5px solid #ffcc00;
+        }
+
+        .service-card h3 {
+            margin-top: 0;
+            color: #1a1a1a;
+        }
+
+        .contacts {
+            background-color: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+
+        .contacts p {
+            margin: 10px 0;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            background-color: #0f0f0f;
+            color: #666;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero {
+                height: 300px;
+            }
+
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .services {
+                display: flex;
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+                gap: 15px;
+                padding: 10px 20px 20px 20px;
+                margin: 20px 0;
+            }
+
+            .service-card {
+                flex: 0 0 80%;
+                scroll-snap-align: start;
+                box-sizing: border-box;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>BIG ROOF</h1>
+        <p>Надежная кровля для вашего дома</p>
+    </header>
+
+    <div class="hero">
+        <h2>Профессиональный монтаж крыш</h2>
+        <p>Делаем качественно, быстро и на века. Кровля любой сложности в вашем регионе.</p>
+    </div>
+
+    <section class="services">
+        <div class="service-card">
+            <h3>Монтаж кровли</h3>
+            <p>Установка металлочерепицы, мягкой кровли и профнастила с гарантией качества.</p>
+        </div>
+        <div class="service-card">
+            <h3>Ремонт крыши</h3>
+            <p>Устранение протечек, замен
+а поврежденных элементов и утепление кровельного пирога.</p>
+        </div>
+        <div class="service-card">
+            <h3>Проектирование</h3>
+            <p>Разработка стропильных систем и расчет необходимых материалов под ваш бюджет.</p>
+        </div>
+    </section>
+
+    <section class="contacts">
+        <h2>Связаться с нами</h2>
+        <p>Телефон: <a href="tel:+79040357444" style="color: #ffcc00; text-decoration: none; font-weight: bold;">+7 (904) 035-74-44</a></p>
+        <p>Email: <a href="mailto:stroimir-33@yandex.ru" style="color: #ffcc00; text-decoration: none;">stroimir-33@yandex.ru</a></p>
+        <p>Адрес: <a href="https://yandex.ru/maps/?text=г.+Владимир,+проезд+Александра+Матросова,+д.+28Б" target="_blank" style="color: #ffcc00; text-decoration: none;">г. Владимир, проезд Александра Матросова, д. 28Б</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 ООО "БИГ РУФ". Все права защищены. Разработано в рамках производственной практики.</p>
+    </footer>
+
+</body>
+</html>
